@@ -54,7 +54,7 @@ describe(@"FISAppDelegate", ^{
 
         it(@"should ignore whitespace, numbers, and punctuation", ^{
             NSUInteger count = [delegate countOfStringsInAllCapsInArray:@[ @"HELLO THERE", @", Y'ALL", @"YAH!" ]];
-            expect(count).to.equal(1);
+            expect(count).to.equal(3);
         });
 
         it(@"should not count lower-case or mixed-case strings", ^{

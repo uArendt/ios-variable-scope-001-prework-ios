@@ -16,6 +16,6 @@
 
 -(NSUInteger)countOfStringsInAllCapsInArray:(NSArray *)array;
 
--(void)removeAllElementsFromArray:(NSArray *)array;
+-(void)removeAllElementsFromArray:(NSMutableArray *)array;
 
 @end
