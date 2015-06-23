@@ -40,7 +40,7 @@ describe(@"FISAppDelegate", ^{
             expect(newArray).to.beKindOf([NSMutableArray class]);
         });
 
-        it(@"should append the given string to the array", ^{
+        it(@"should add the given string to the array", ^{
             NSMutableArray *newArray = [delegate arrayByAddingString:@"hello" toArray:originalArray];
             expect(newArray).to.equal(@[ @1, @2, @3, @"hello" ]);
         });
