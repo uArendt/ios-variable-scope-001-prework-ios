@@ -27,43 +27,41 @@ describe(@"FISAppDelegate", ^{
         __block NSMutableArray *originalArray;
 
         beforeEach(^{
-            originalArray = [@[ @1, @2, @3 ] mutableCopy];
+            originalArray = [@[ @"Hello", @"this", @"is" ] mutableCopy];
         });
 
         it(@"must not modify the original array", ^{
-            [delegate arrayByAddingString:@"hello" toArray:originalArray];
-            expect(originalArray).to.equal(@[ @1, @2, @3 ]);
+            [delegate arrayByAddingString:@"Patrick" toArray:originalArray];
+            expect(originalArray).to.equal(@[ @"Hello", @"this", @"is" ]);
         });
 
         it(@"should actually return a mutable array", ^{
-            NSMutableArray *newArray = [delegate arrayByAddingString:@"hello" toArray:originalArray];
+            NSMutableArray *newArray = [delegate arrayByAddingString:@"Patrick" toArray:originalArray];
             expect(newArray).to.beKindOf([NSMutableArray class]);
         });
 
         it(@"should add the given string to the array", ^{
-            NSMutableArray *newArray = [delegate arrayByAddingString:@"hello" toArray:originalArray];
-            expect(newArray).to.equal(@[ @1, @2, @3, @"hello" ]);
+            NSMutableArray *newArray = [delegate arrayByAddingString:@"Patrick" toArray:originalArray];
+            expect(newArray).to.equal(@[ @"Hello", @"this", @"is", @"Patrick" ]);
         });
     });
 
-    describe(@"all-caps counting method", ^{
-        it(@"should count all-caps strings", ^{
-            NSUInteger count = [delegate countOfStringsInAllCapsInArray:@[ @"OH", @"YES", @"WOOO" ]];
+    describe(@"uppercase string counting method", ^{
+        it(@"should count uppercase strings", ^{
+            NSUInteger count = [delegate countOfUppercaseStringsInArray:@[ @"OH", @"YES", @"WOOO" ]];
             expect(count).to.equal(3);
         });
 
         it(@"should ignore whitespace, numbers, and punctuation", ^{
-            NSUInteger count = [delegate countOfStringsInAllCapsInArray:@[ @"HELLO THERE", @", Y'ALL", @"YAH!" ]];
+            NSUInteger count = [delegate countOfUppercaseStringsInArray:@[ @"HELLO THERE", @", Y'ALL", @"YAH!" ]];
             expect(count).to.equal(3);
         });
 
         it(@"should not count lower-case or mixed-case strings", ^{
-            NSUInteger count = [delegate countOfStringsInAllCapsInArray:@[ @"oH No", @"what NoW", @"AAAH"]];
+            NSUInteger count = [delegate countOfUppercaseStringsInArray:@[ @"oH No", @"what NoW", @"AAAH"]];
             expect(count).to.equal(1);
         });
 
-        // Could write a test to ignore strings that consist entirely of non-alphabetical characters,
-        // but that's not what this lab is really about.
     });
 
     describe(@"array-emptying method", ^{
@@ -74,7 +72,7 @@ describe(@"FISAppDelegate", ^{
         });
 
         it(@"should remove all elements from the given array", ^{
-            [delegate removeAllElementsFromArray:array];
+            [delegate removeAllObjectsFromArray:array];
             expect(array.count).to.equal(0);
         });
 
@@ -82,7 +80,7 @@ describe(@"FISAppDelegate", ^{
             // Probably unnecessary, but just in case someone's feeling tricky!
             NSMutableArray *originalArray = array;
 
-            [delegate removeAllElementsFromArray:array];
+            [delegate removeAllObjectsFromArray:array];
             expect(array).to.beIdenticalTo(originalArray);
         });
     });
