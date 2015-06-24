@@ -4,7 +4,7 @@
 
 1. Use method arguments to pass values horizontally between contexts.
 2. Write loops and conditionals with an awareness of scope.
-2. Pull a value out of a localized context by declaring it prior to the localization.
+3. Pull a value out of a localized context by declaring it prior to the localization.
 
 ## Intructions
 
