@@ -4,7 +4,7 @@
 
 1. Use method arguments to pass values to a separate scope.
 2. Write loops and conditionals with an awareness of scope.
-3. Pull a value out of a local scope by defining it in a wider scope.
+3. Understand how variables go into and out of scope.
 
 ## Intructions
 
