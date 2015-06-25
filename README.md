@@ -2,13 +2,13 @@
 
 ## Objectives
 
-1. Use method arguments to pass values horizontally between contexts.
+1. Use method arguments to pass values to a separate scope.
 2. Write loops and conditionals with an awareness of scope.
-3. Pull a value out of a localized context by declaring it prior to the localization.
+3. Pull a value out of a local scope by defining it in a wider scope.
 
 ## Intructions
 
-In this lab we're going to get some practice scope by working with different local contexts. In addition to passing values horizontally through method arguments, you'll have to navigate writing some loops and conditionals that localize your context further.
+In this lab we're going to get some more practice writing code, but through the lens of scope. You'll have to navigate writing some methods that use loops and conditionals with the limitations of scope in mind.
 
 1. Open the `*.xcworkspace` file and navigate to the `FISAppDelegate.h` header file. The method names have already been declared for you. Review them to gather their needed arguments, supplied returns, and intended function based upon their names. Read the tests to calibrate your thinking to some of the problems you might encounter. When you're ready, navigate to the `FISAppDelegate.m` implementation file to define the methods.
 

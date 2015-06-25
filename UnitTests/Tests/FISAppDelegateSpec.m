@@ -61,6 +61,9 @@ describe(@"FISAppDelegate", ^{
             NSUInteger count = [delegate countOfUppercaseStringsInArray:@[ @"oH No", @"what NoW", @"AAAH"]];
             expect(count).to.equal(1);
         });
+        
+        // Could write a test to ignore strings that consist entirely of non-alphabetical characters,
+        // but that's not what this lab is really about.
 
     });
 
