@@ -16,9 +16,13 @@
 @implementation FISAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-
-
     return YES;
 }
+
+/*
+ 
+ * Write your method definitions here.
+ 
+ */
 
 @end
