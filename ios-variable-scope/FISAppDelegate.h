@@ -14,8 +14,8 @@
 
 -(NSMutableArray *)arrayByAddingString:(NSString *)string toArray:(NSMutableArray *)array;
 
--(NSUInteger)countOfStringsInAllCapsInArray:(NSArray *)array;
+-(NSUInteger)countOfUppercaseStringsInArray:(NSArray *)array;
 
--(void)removeAllElementsFromArray:(NSMutableArray *)array;
+-(void)removeAllObjectsFromArray:(NSMutableArray *)array;
 
 @end
