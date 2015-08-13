@@ -16,4 +16,4 @@ In this lab we're going to get some more practice writing code, but through the 
 
 3. Write the method body for `countOfUppercaseStringsInArray:` which takes an array as an argument and returns an unsigned integer of the count of the strings in the array that are all uppercase. You’ll need to use a `for` loop to iterate over the array, but think about how the scope will work so that your count variable is available to be returned at the end of the method. Don't forget to read the tests, especially for this method!
 
-4. Write the method body for `removeAllObjectsFromArray:`. This should return the argument array emptied of its objects. Don't just create a new array and return that—there's a test that will catch it!
+4. Write the method body for `removeAllObjectsFromArray:`. This method should empty the argument array of its objects. Note how this method doesn't return anything; the passed array should be modified in-place.

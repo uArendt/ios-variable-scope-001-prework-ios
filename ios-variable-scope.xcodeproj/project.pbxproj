@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03D7F1D6CC9B473BC8340AB0 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = A1F775C0E1551DE2D3208F77 /* Main.storyboard */; };
 		582BA74E405D918B2D15BCFD /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 337C9E7A6B7BEB58F7C32D0E /* libPods-unit_tests.a */; };
 		71433E43DAF676ABE865530D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C73EC7E6EE44065A590F84B9 /* Images.xcassets */; };
 		AC7B4EA7CDE350BAD5DD6C6B /* LaunchScreen.xib in Sources */ = {isa = PBXBuildFile; fileRef = 92E09BD7249CA271D7494810 /* LaunchScreen.xib */; };
+		BD6F11661B7D0B3C0069F105 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD6F11651B7D0B3C0069F105 /* Main.storyboard */; };
 		BD8D6C6D1B0246BF0050D551 /* FISAppDelegateSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = BD8D6C6C1B0246BF0050D551 /* FISAppDelegateSpec.m */; };
 		BE2C6E243B704111A80D68B0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159E37B42326F65B42945E44 /* Foundation.framework */; };
 		FAA2F7FC91D4CFF86218D41C /* FISAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08219DDAE5544565B7E501CF /* FISAppDelegate.m */; };
@@ -39,8 +39,8 @@
 		7FE2B53A674964C31B604930 /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		92E09BD7249CA271D7494810 /* LaunchScreen.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		95BC26B75865BF8BCFB49CCC /* ios-variable-scope-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ios-variable-scope-Info.plist"; sourceTree = "<group>"; };
-		A1F775C0E1551DE2D3208F77 /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		B3935D48E058D7A1A3087CF1 /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
+		BD6F11651B7D0B3C0069F105 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		BD8D6C6C1B0246BF0050D551 /* FISAppDelegateSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegateSpec.m; sourceTree = "<group>"; };
 		C73EC7E6EE44065A590F84B9 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EC4011D0AC1813557180ED68 /* FISAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FISAppDelegate.h; sourceTree = "<group>"; };
@@ -80,7 +80,7 @@
 			children = (
 				EC4011D0AC1813557180ED68 /* FISAppDelegate.h */,
 				08219DDAE5544565B7E501CF /* FISAppDelegate.m */,
-				A1F775C0E1551DE2D3208F77 /* Main.storyboard */,
+				BD6F11651B7D0B3C0069F105 /* Main.storyboard */,
 				865244B04B90C3B6BF9AF4BA /* Resources */,
 			);
 			path = "ios-variable-scope";
@@ -254,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71433E43DAF676ABE865530D /* Images.xcassets in Resources */,
+				BD6F11661B7D0B3C0069F105 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +299,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAA2F7FC91D4CFF86218D41C /* FISAppDelegate.m in Sources */,
-				03D7F1D6CC9B473BC8340AB0 /* Main.storyboard in Sources */,
 				AC7B4EA7CDE350BAD5DD6C6B /* LaunchScreen.xib in Sources */,
 				FFCB57DE3EFE5C175AB19509 /* main.m in Sources */,
 			);
