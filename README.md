@@ -6,7 +6,7 @@
 2. Write loops and conditionals with an awareness of scope.
 3. Understand how variables go into and out of scope.
 
-## Intructions
+## Instructions
 
 In this lab we're going to get some more practice writing code, but through the lens of scope. You'll have to navigate writing some methods that use loops and conditionals with the limitations of scope in mind.
 
