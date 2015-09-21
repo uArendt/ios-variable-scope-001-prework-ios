@@ -19,6 +19,12 @@
     return YES;
 }
 
+/*
+ 
+ * Write your method definitions here.
+ 
+ */
+
 -(NSArray *)arrayByAddingString:(NSString *)string toArray:(NSArray *)array
 {
     NSMutableArray *arrayCopy = [NSMutableArray arrayWithArray:array];  // You could also call -mutableCopy on the array
@@ -63,6 +69,5 @@
 - (void)removeAllObjectsFromArray:(NSMutableArray *)array {
     [array removeAllObjects];
 }
-
 
 @end
