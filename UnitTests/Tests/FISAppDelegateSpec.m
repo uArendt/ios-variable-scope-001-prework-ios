@@ -35,13 +35,13 @@ describe(@"FISAppDelegate", ^{
             expect(originalArray).to.equal(@[ @"Hello", @"this", @"is" ]);
         });
 
-        it(@"should actually return a mutable array", ^{
-            NSMutableArray *newArray = [delegate arrayByAddingString:@"Patrick" toArray:originalArray];
-            expect(newArray).to.beKindOf([NSMutableArray class]);
+        it(@"should actually return an array", ^{
+            NSArray *newArray = [delegate arrayByAddingString:@"Patrick" toArray:originalArray];
+            expect(newArray).to.beKindOf([NSArray class]);
         });
 
         it(@"should add the given string to the array", ^{
-            NSMutableArray *newArray = [delegate arrayByAddingString:@"Patrick" toArray:originalArray];
+            NSArray *newArray = [delegate arrayByAddingString:@"Patrick" toArray:originalArray];
             expect(newArray).to.equal(@[ @"Hello", @"this", @"is", @"Patrick" ]);
         });
     });
